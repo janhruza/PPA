@@ -34,6 +34,5 @@ static void OutputResult(double targetDistance,
 
 int main(void)
 {
-    
     return 0;
 }
