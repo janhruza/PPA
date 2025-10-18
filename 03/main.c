@@ -30,7 +30,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#pragma region Definice metod a jejich popis
+#pragma region Deklarace metod, promennych a jejich popis
 
 /// <summary>
 /// Predstavuje zadanou gravitacni konstantu.
@@ -80,7 +80,7 @@ static void OutputResult(double targetDistance, double miss);
 
 #pragma endregion
 
-#pragma region Declarace metod
+#pragma region Definice metod
 
 static double InputReal(const char* prompt)
 {
