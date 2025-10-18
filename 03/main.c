@@ -15,7 +15,7 @@
 //  2. Provedeni vypoctu
 //      - Jak daleko od modulu zachranny balicek s nahradnimi klici dopadl
 //      - Zda se jej povedlo dorucit:
-//      - Tj. balicek ma v okamziku vypusteni vodorovny smer a rychlost zasobovaci lode
+//          Tj. balicek ma v okamziku vypusteni vodorovny smer a rychlost zasobovaci lode
 // 
 //  3. Vyhodnoceni vysledku
 //
@@ -36,7 +36,7 @@
 /// Predpokladejte inteligentniho uzivatele, který zada pozadovane hodnoty.
 /// </summary>
 /// <returns>Realne cislo zadane uzivatelem.</returns>
-static double InputReal(const char*);
+static double InputReal(const char* prompt);
 
 /// <summary>
 /// Podprogram na zaklade rychlosti a vysky vypocita vzdalenost mista dopadu. Rychlost (velocity) je v m/s, vyska (altitude) v metrech a balicek je vypusten souradnicich [0; altitude].
@@ -44,13 +44,13 @@ static double InputReal(const char*);
 /// Predpokladejte, ze velocity i altitude bude kladne cislo.
 /// </summary>
 /// <returns>Vzdalenost mista dopadu.</returns>
-static double ComputeImpactDistance(double, double);
+static double ComputeImpactDistance(double velocity, double altitude);
 
 /// <summary>
 /// Podprogram otestuje, zda dosazena vzdalenost distance lezi v zadane zasobovaci oblasti o dane velikosti. targetDistance je stred cile, targetRadius je maximalni povolena vzdalenost od cile.
 /// </summary>
 /// <returns>V pripade, ze bylo dosazeno zasobovaci oblasti, vrati se hodnota 0, v opacnem pripade se vrati bud minimálni pocet metru, o ktery je nutne trefit dal (kladne cislo) nebo minimálni pocet metru, o ktery je nutne trefit bliz (zaporne cislo).</returns>
-static double IsDelivered(double, double, double);
+static double IsDelivered(double distance, double targetDistance, double targetRadius);
 
 /// <summary>
 /// Podprogram vypise vysledek strelby ve tvaru:
@@ -59,7 +59,7 @@ static double IsDelivered(double, double, double);
 /// "cil ve vzdalenosti 50.0 m byl prestrelen o 10.0 m".
 /// Povsimnete si, ze znamenko se ve vypisu neobjevuje. Vsechny hodnoty vypisujte s presnosti na 1 desetinne misto.
 /// </summary>
-static void OutputResult(double, double);
+static void OutputResult(double targetDistance, double miss);
 
 /*
 * Hlavni program musi volat definovane metody (podprogramy):
@@ -112,5 +112,18 @@ static void OutputResult(double targetDistance,
 /// </summary>
 int main(void)
 {
+    // 1. ziskani vstupu
+    double velocity = InputReal("Zadej rychlost (velocity)");
+    double altitude = InputReal("Vyska nad povrchem (altitude)");
+    double targetDistance = InputReal("Aktualni vzdalenost modulu (targetDistance");
+    double targetRadius = InputReal("Maximalni vzdalenost dopadu (targetRadius)");
+
+    // provedeni vypoctu
+    double distance = ComputeImpactDistance(velocity, altitude);
+    double miss = IsDelivered(distance, targetDistance, targetRadius);
+
+    // vyhodnoceni vysledku
+    OutputResult(targetDistance, miss);
+
     return 0;
 }
