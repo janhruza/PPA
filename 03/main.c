@@ -33,6 +33,11 @@
 #pragma region Definice metod a jejich popis
 
 /// <summary>
+/// Predstavuje zadanou gravitacni konstantu.
+/// </summary>
+static double G = 1.62;
+
+/// <summary>
 /// Podprogram vypise na obrazovku text promenne prompt a nacte od uzivatele realne cislo, ktere vrati.
 /// Predpokladejte inteligentniho uzivatele, který zada pozadovane hodnoty.
 /// </summary>
@@ -88,22 +93,39 @@ static double InputReal(const char* prompt)
 static double ComputeImpactDistance(double velocity,
                                     double altitude)
 {
-    double value = 0;
-    return value;
+    double time = sqrt((2 * altitude) / G);
+    double distance = velocity * time;
+    return distance;
 }
 
 static double IsDelivered(double distance,
                           double targetDistance,
                           double targetRadius)
 {
-    double value = 0;
-    return value;
+
+    double b1 = targetDistance - targetRadius;
+    double b2 = targetDistance + targetRadius;
+
+    if (distance > b2)
+    {
+        return distance - b2;
+    }
+
+    else if (distance < b1)
+    {
+        return distance - b1;
+    }
+
+    else
+    {
+        return 0;
+    }
 }
 
 static void OutputResult(double targetDistance,
                          double miss)
 {
-    if (miss < 0.001)
+    if (miss == 0)
     {
         printf("balicek dorucen!\n");
     }
@@ -115,7 +137,7 @@ static void OutputResult(double targetDistance,
 
     else
     {
-        printf("do cile ve vzdalenosti %.1lf chybi %.2lf\n", targetDistance, fabs(miss));
+        printf("do cile ve vzdalenosti %.1lf chybi %.2lf m \n", targetDistance, fabs(miss));
     }
 
     return;
