@@ -113,10 +113,10 @@ static void OutputResult(double targetDistance,
 int main(void)
 {
     // 1. ziskani vstupu
-    double velocity = InputReal("Zadej rychlost (velocity)");
-    double altitude = InputReal("Vyska nad povrchem (altitude)");
-    double targetDistance = InputReal("Aktualni vzdalenost modulu (targetDistance");
-    double targetRadius = InputReal("Maximalni vzdalenost dopadu (targetRadius)");
+    double velocity = InputReal("Zadej pocatecni rychlost");
+    double altitude = InputReal("Zadej vysku");
+    double targetDistance = InputReal("Zadej vzdalenost k cili");
+    double targetRadius = InputReal("Zadej velikost cile");
 
     // provedeni vypoctu
     double distance = ComputeImpactDistance(velocity, altitude);
@@ -124,6 +124,5 @@ int main(void)
 
     // vyhodnoceni vysledku
     OutputResult(targetDistance, miss);
-
     return 0;
 }
