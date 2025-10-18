@@ -28,6 +28,7 @@
 //  Poznamka: Hlavni program pouze pospojuje jednotlive casti dohromady. V pripade potreby dodejte i dalsi podprogramy, ktere ale nebudou volany z hlavniho programu.
 
 #include <stdio.h>
+#include <math.h>
 
 #pragma region Definice metod a jejich popis
 
@@ -102,6 +103,21 @@ static double IsDelivered(double distance,
 static void OutputResult(double targetDistance,
                          double miss)
 {
+    if (miss < 0.001)
+    {
+        printf("balicek dorucen!\n");
+    }
+
+    else if (miss > 0)
+    {
+        printf("cil ve vzdalenosti %.1lf m byl prestrelen o %.1lf m\n", targetDistance, fabs(miss));
+    }
+
+    else
+    {
+        printf("do cile ve vzdalenosti %.1lf chybi %.2lf\n", targetDistance, fabs(miss));
+    }
+
     return;
 }
 
