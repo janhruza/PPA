@@ -1,6 +1,6 @@
 /*
-* Priklad 01: Ctverec
-* Autor reseni: Jan Hruza, DiS.
+* Priklad 01: Ctverec - https://programovani.kiv.zcu.cz/?sekce=ppa-cvicebnice&uloha=ppa-cvicebnice/priklady/Prikazy/01-Ctverec
+* Autor reseni: Jan Hruza
 */
 
 #include <stdio.h>
