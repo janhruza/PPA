@@ -7,6 +7,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="priklady/BMI/BMI.vcxproj" Id="18d261b4-22da-424b-951a-ddefd856533f" />
   <Project Path="priklady/Ctverec/Ctverec.vcxproj" Id="6d90e528-9ff5-4a8b-af4c-8ac599ae5c83" />
   <Project Path="priklady/FahrenheitToCelsius/FahrenheitToCelsius.vcxproj" Id="4748fcb3-f33b-4335-947f-bae88b52dc4c" />
   <Project Path="priklady/MetersToInches/MetersToInches.vcxproj" Id="02d1f631-e1b0-4a4d-9966-e1738d76c9d0" />
