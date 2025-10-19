@@ -8,6 +8,7 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="priklady/Ctverec/Ctverec.vcxproj" Id="6d90e528-9ff5-4a8b-af4c-8ac599ae5c83" />
+  <Project Path="priklady/MetersToInches/MetersToInches.vcxproj" Id="02d1f631-e1b0-4a4d-9966-e1738d76c9d0" />
   <Project Path="priklady/Uhlopricka3/Uhlopricka3.vcxproj" Id="26729124-c78c-4982-9ebb-5917abf0be99" />
   <Project Path="ukoly/01/01.vcxproj" Id="79e8c0ca-c8e8-4d46-a689-10bdf752a514" />
   <Project Path="ukoly/02/02.vcxproj" Id="0831fec2-e4b4-4ac7-b97f-c4909b4b71d3" />
