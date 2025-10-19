@@ -13,6 +13,7 @@
   <Project Path="priklady/FahrenheitToCelsius/FahrenheitToCelsius.vcxproj" Id="4748fcb3-f33b-4335-947f-bae88b52dc4c" />
   <Project Path="priklady/MetersToInches/MetersToInches.vcxproj" Id="02d1f631-e1b0-4a4d-9966-e1738d76c9d0" />
   <Project Path="priklady/Plot/Plot.vcxproj" Id="c8f28653-8326-4b28-afe9-b9608e5ca181" />
+  <Project Path="priklady/Sleva/Sleva.vcxproj" Id="09b6b494-6704-4e4e-9c5d-21d447d81793" />
   <Project Path="priklady/Uhlopricka3/Uhlopricka3.vcxproj" Id="26729124-c78c-4982-9ebb-5917abf0be99" />
   <Project Path="ukoly/01/01.vcxproj" Id="79e8c0ca-c8e8-4d46-a689-10bdf752a514" />
   <Project Path="ukoly/02/02.vcxproj" Id="0831fec2-e4b4-4ac7-b97f-c4909b4b71d3" />
