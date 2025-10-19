@@ -7,10 +7,12 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="priklady/Alfa/Alfa.vcxproj" Id="6e4dd7e1-b4ee-451c-bf7b-bc3b836d849d" />
   <Project Path="priklady/BMI/BMI.vcxproj" Id="18d261b4-22da-424b-951a-ddefd856533f" />
   <Project Path="priklady/Ctverec/Ctverec.vcxproj" Id="6d90e528-9ff5-4a8b-af4c-8ac599ae5c83" />
   <Project Path="priklady/DPH/DPH.vcxproj" Id="10c06f26-60dd-4086-b055-c8e7d1123e23" />
   <Project Path="priklady/FahrenheitToCelsius/FahrenheitToCelsius.vcxproj" Id="4748fcb3-f33b-4335-947f-bae88b52dc4c" />
+  <Project Path="priklady/Lerp/Lerp.vcxproj" Id="3de045a2-fc01-471a-9b38-ff99f574df02" />
   <Project Path="priklady/MetersToInches/MetersToInches.vcxproj" Id="02d1f631-e1b0-4a4d-9966-e1738d76c9d0" />
   <Project Path="priklady/Plot/Plot.vcxproj" Id="c8f28653-8326-4b28-afe9-b9608e5ca181" />
   <Project Path="priklady/Sleva/Sleva.vcxproj" Id="09b6b494-6704-4e4e-9c5d-21d447d81793" />

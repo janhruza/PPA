@@ -1,5 +1,5 @@
 /*
-* Ukol 08: Sleva? - https://programovani.kiv.zcu.cz/?sekce=ppa-cvicebnice&uloha=ppa-cvicebnice/priklady/Prikazy/08-Sleva
+* Priklad 08: Sleva? - https://programovani.kiv.zcu.cz/?sekce=ppa-cvicebnice&uloha=ppa-cvicebnice/priklady/Prikazy/08-Sleva
 * Autor reseni: Jan Hruza
 */
 
